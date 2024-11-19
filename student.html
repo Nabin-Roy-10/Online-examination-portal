@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Student Exam Portal</title>
+	<link rel="stylesheet" href="student_css.css">
+</head>
+<body>
+<div class="container">
+    <p id="welcomeMessage"></p> <!-- To display the student's name and email -->
+	
+    <p class="text1">Enter Your Exam Details</p>
+    <p id="message"></p>
+<div class="formDiv">
+    <form name="questionForm" id="questionForm" class="questionsForm" method="post">
+        <label for="subjectName" class="text2">Subject Name</label>
+        <input type="text" name="subjectName" id="subjectName" placeholder="Enter subject" required><br>
+
+        <label for="moduleNumber" class="text2">Module Number</label>
+        <input type="number" name="modNum" id="moduleNumber" placeholder="Enter module number" required><br>
+
+        <input type="submit" value="Submit" class="buttons">
+	<input type="reset" value="Reset" class="buttons">
+    </form>
+</div>
+</div>
+<div id="questionContainer"></div>
+
+<!-- Load student.js to handle the form and session data -->
+<script src="student_js.js"></script>
+</body>
+</html>

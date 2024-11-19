@@ -1,0 +1,26 @@
+<?php session_start(); ?>
+<html>
+<head>
+    <title>Examiners Page</title>
+	<link rel="stylesheet" href="getQuestions_css.css">    
+</head>
+<body>
+<div class="container">
+    <p class="text1">Enter subject name and module</br> number to see the questions</p>
+    <p id="message"></p>
+<div class="formDiv">
+    <form name="questionForm" id="questionForm" class="questionsForm" method="post">
+        <label for="subjectName" class="text2">Subject Name</label>
+        <input type="text" name="subjectName" id="subjectName" placeholder="subject" required><br>
+        <label for="moduleNumber" class="text2">Module Number</label>
+        <input type="number" name="modNum" id="moduleNumber" placeholder="module no." required><br>
+        
+        <input type="submit" value="Submit" class="buttons">
+	<input type="reset" value="Reset" class="buttons">
+    </form>
+</div>
+</div>
+
+<script src="getQuestions_js.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+*{margin:0px; padding:0px; box-sizing:border-box;}
+
+body{
+	background:#f0f4f8;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.text1{
+	font-weight:bold;
+	font-size:32px;
+	margin-bottom:20px;
+}
+
+.text2{
+	font-size:20px;
+	margin-bottom:0px;
+}
+
+a{
+	text-decoration:none;
+}
+
+.buttons{
+	height:30px;
+	width:150px;
+	background-color:#fff;
+	border:1px solid darkblue;
+	border-radius:8px;
+	margin-left:10px;
+	color:white;
+}
+
+.buttons:hover{
+	background-color:lightgray;
+}
+
+p{
+	margin-bottom:20px;
+}
